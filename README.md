@@ -18,8 +18,16 @@ cd Social-Media-Platform
 ```
 
 ---
+## 2. Update DB Credentials
 
-## 2. Build the Project
+Update the database credentials according to your local MySQL Server in the following file:
+```bash
+application.properties
+```
+
+---
+
+## 3. Build the Project
 
 ```bash
 mvn clean install
@@ -27,7 +35,7 @@ mvn clean install
 
 ---
 
-## 3. Run the Application
+## 4. Run the Application
 
 ```bash
 mvn spring-boot:run
@@ -41,7 +49,7 @@ http://localhost:8080
 
 ---
 
-## 4. Access Swagger UI
+## 5. Access Swagger UI
 
 Swagger is available at:
 
@@ -51,7 +59,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## 5. Using JWT Token in Swagger
+## 6. Using JWT Token in Swagger
 
 Some APIs require authentication.
 
@@ -74,7 +82,7 @@ Some APIs require authentication.
 
 ---
 
-## 6. Example API Calls
+## 7. Example API Calls
 
 ### Public API (No Auth)
 
@@ -91,13 +99,13 @@ Authorization: Bearer <your-token>
 
 ---
 
-## 7. Stopping the Application
+## 8. Stopping the Application
 
 Press `STOP ICON` in the terminal where it's running.
 
 ---
 
-## 8. Notes
+## 9. Notes
 
 * Make sure your token is valid. Expired tokens will cause `401 Unauthorized`.
 * To change server port or other configs, edit `src/main/resources/application.properties`.
